@@ -197,6 +197,26 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.typewriter h3{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: .15em solid black;
+  letter-spacing: .15em;
+  animation: typing 4.5s steps(12,end) forwards, blink-caret .75s step-end infinite;
+}
+@keyframes typing{
+  from{width: 0;}
+  to{width: 9em;}
+}
+@keyframes blink-caret{
+  from,to{
+    border-color: transparent;
+  }
+  50%{
+    border-color: black;
+  }
+}
 @media screen and (min-width: 1024px) {
   .main-content {
     max-width: 1200px;
